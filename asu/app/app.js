@@ -25,7 +25,7 @@ blogApp.config(['$routeProvider', function($routeProvider){
 //Controller
 blogApp.controller('PostsController', ['$scope', '$http' ,function($scope, $http){
 		
-	$http.get('https://sonoftaraz.github.io/asu/data/posts.json').success(function(data){
+	$http.get('data/posts.json').success(function(data){
 	  $scope.posts = data;
 	});﻿
 
